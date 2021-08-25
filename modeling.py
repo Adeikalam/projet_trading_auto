@@ -16,7 +16,6 @@ def build_pipeline(scaler_path, model_path):
     
     scaler = load(scaler_path)
     model = load(model_path)
-    
     col_dropper = FunctionTransformer(drop_columns)
 
     pipeline = Pipeline([
